@@ -43,6 +43,45 @@ calculateDogAge()
 
 ```js
 // your code goes here
+//  celsiusToFahrenheit
+function celsiusToFahrenheit(){
+  let value = +prompt("enter celcius") 
+  return `${(value * 9 / 5) + 32} degree Fahrenheit is ${value} degree celcius`;
+}
+celsiusToFahrenheit()
+
+// OR
+const celsiusToFahrenheit = (val) => `${(val * 9 / 5) + 32} degree Fahrenheit is ${val} degree celcius`
+
+// OR
+
+function celsiusToFahrenheit(value){
+   
+  return `${(value * 9 / 5) + 32} degree Fahrenheit is ${value} degree celcius`;
+}
+
+celsiusToFahrenheit(32)
+
+// fahrenheitToCelsius
+function fahrenheitToCelsius(){
+  let value = +prompt("enter celcius") 
+  return `${(value - 32) * 5/9} degree celcius is ${value} degree  Fahrenheit`;
+}
+fahrenheitToCelsius()
+
+// or
+
+const fahrenheitToCelsius = (val) => `${(val - 32) * 5 / 9} degree celcius is ${val} degree Fahrenheit`
+
+
+// OR
+function fahrenheitToCelsius(value){
+   
+  return `${(value - 32) * 5 / 9} degree celcius is ${value} degree Fahrenheit`;
+}
+
+fahrenheitToCelsius(32)
+
 ```
 4. 🎖The function below returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result:
 
